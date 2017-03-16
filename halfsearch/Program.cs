@@ -20,7 +20,7 @@ namespace halfsearch
             int mid, first = 0, last = taul.Length - 1;
             Console.WriteLine("Enter number:");
             int target = int.Parse(Console.ReadLine());
-            var timer = System.Diagnostics.Stopwatch.StartNew();
+            var timer = System.Diagnostics.Stopwatch.StartNew(); //Stopwatch timer=System.Diagnostics.Stopwatch.StartNew();
             while (first <= last)
             {
                 mid = (first + last) / 2;
@@ -32,7 +32,7 @@ namespace halfsearch
                     Console.WriteLine( "Target " +target  " was found at index " + taul[mid]);
 
             }
-            var elapsed = timer.ElapsedMilliseconds.ToString();
+            var elapsed = timer.ElapsedMilliseconds.ToString();//String elapsed=timer.ElapsedMilliseconds.ToString();
             Console.WriteLine("time: " + elapsed + " milliseconds");
         }
     }
